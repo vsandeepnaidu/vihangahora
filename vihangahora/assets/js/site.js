@@ -242,7 +242,7 @@
         ? 'Sunrise ' + fmt(d.rise) + ', sunset ' + fmt(d.set) + ' for your location on this date. Worked out on this device; your location is not sent anywhere.'
         : 'The Sun does not rise or set at your location on this date, so the 6-to-6 reckoning is used.';
       var near = s.half === 'auto' && d.moon.nearChange
-        ? '<p class="status ruling">The Moon is close to New or Full on this day, so the half changes around now. Check a calendar (pañcāṅgam) and set the half by hand if needed.</p>' : '';
+        ? '<p class="status ruling">The Moon is close to New or Full on this day, so the half changes around now. Check a calendar (panchangam) and set the half by hand if needed.</p>' : '';
       out.innerHTML = '<p class="eyebrow">' + WEEKDAY[d.wd] + ', sunrise to sunrise</p>' + sky(d, s) + near +
         (today ? nowCard(d, s.bird) : '') + status(d, s.bird) + good(d, today, s.bird) +(today ? mirror(s) : '') +
         '<h3 style="margin-top:36px">Day · ' + fmt(d.rise) + ' – ' + fmt(d.set) + '</h3>' + slots(d, 'day', today ? d.cur : null) +
